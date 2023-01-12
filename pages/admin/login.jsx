@@ -24,20 +24,20 @@ const Login = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h1>Admin Dashboard</h1>
+        <h1>Painel de Controle</h1>
         <input
-          placeholder="username"
+          placeholder="usuário"
           className={styles.input}
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
-          placeholder="password"
+          placeholder="senha"
           type="password"
           className={styles.input}
           onChange={(e) => setPassword(e.target.value)}
         />
         <button onClick={handleClick} className={styles.button}>
-          Sign In
+          Entrar
         </button>
         {error && <span className={styles.error}>Credenciais erradas!</span>}
       </div>

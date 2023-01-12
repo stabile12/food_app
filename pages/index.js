@@ -14,7 +14,7 @@ export default function Home({pizzaList, admin}) { // pizzalist vem do serverSid
   return (
     <div className={styles.container}>
       <Head>
-        <title>Stabile Restaurant</title>
+        <title>Estabile's</title>
         <meta name="description" content="best in town" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -99,11 +99,11 @@ const Cart = () => {
         <table className={styles.table}>
           <tbody>
             <tr className={styles.trTitle}>
-              <th>Product</th>
-              <th>Name</th>
+              <th>Produto</th>
+              <th>Nome</th>
               <th>Extras</th>
-              <th>Price</th>
-              <th>Quantity</th>
+              <th>Preço</th>
+              <th>Quantidade</th>
               <th>Total</th>
             </tr>
           </tbody>
@@ -148,12 +148,12 @@ const Cart = () => {
       </div>
       <div className={styles.right}>
         <div className={styles.wrapper}>
-          <h2 className={styles.title}>CART TOTAL</h2>
+          <h2 className={styles.title}>TOTAL</h2>
           <div className={styles.totalText}>
             <b className={styles.totalTextTitle}>Subtotal:</b>R${cart.total}
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Discount:</b>$0.00
+            <b className={styles.totalTextTitle}>Desconto:</b>$0.00
           </div>
           <div className={styles.totalText}>
             <b className={styles.totalTextTitle}>Total:</b>${cart.total}
@@ -164,7 +164,7 @@ const Cart = () => {
                 className={styles.payButton}
                 onClick={() => setCash(true)}
               >
-                CASH ON DELIVERY
+                DINHEIRO NA ENTREGA
               </button>
               <PayPalScriptProvider
                 options={{
@@ -180,7 +180,7 @@ const Cart = () => {
             </div>
           ) : (
             <button onClick={() => setOpen(true)} className={styles.button}>
-              CHECKOUT NOW!
+              FINALIZAR!
             </button>
           )}
         </div>

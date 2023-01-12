@@ -44,15 +44,15 @@ const Index = ({ orders, products }) => {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        <h1 className={styles.title}>Products</h1>
+        <h1 className={styles.title}>Produtos</h1>
         <table className={styles.table}>
           <tbody>
             <tr className={styles.trTitle}>
-              <th>Image</th>
+              <th>Imagem</th>
               <th>Id</th>
-              <th>Title</th>
-              <th>Price</th>
-              <th>Action</th>
+              <th>Nome</th>
+              <th>Preço</th>
+              <th>Ações</th>
             </tr>
           </tbody>
           {pizzaList.map(product => (
@@ -78,16 +78,16 @@ const Index = ({ orders, products }) => {
             </tbody>
           ))}
         </table>
-        <h1 className={styles.title}>Orders</h1>
+        <h1 className={styles.title}>Pedidos</h1>
         <table className={styles.table}>
           <tbody>
             <tr className={styles.trTitle}>
               <th>ID</th>
-              <th>Customer</th>
+              <th>Cliente</th>
               <th>total</th>
-              <th>Payment</th>
+              <th>Pagamento</th>
               <th>Status</th>
-              <th>Action</th>
+              <th>Ações</th>
             </tr>
           </tbody>
           {orderList.map(order => (
@@ -101,7 +101,7 @@ const Index = ({ orders, products }) => {
                 </td>
                 <td>{status[order.status]}</td>
                 <td>
-                  <button disabled={false} className={styles.button} onClick={() => handleStatus(order._id)}>Next stage</button>
+                  <button disabled={false} className={styles.button} onClick={() => handleStatus(order._id)}>Próximo</button>
 
                 </td>
               </tr>

@@ -10,11 +10,11 @@ const Footer = () => {
       <div className={styles.item}>
         <div className={styles.card}>
           <h2 className={styles.motto}>
-            OH YES,THE ESTABILE'S PIZZA RESTAURANT, YOUR FULL STACK PIZZA.
+            ESTABILE'S <br/> FULL STACK PIZZA.
           </h2>
         </div>
         <div className={styles.card}>
-          <h1 className={styles.title}>FIND OUR RESTAURANTS</h1>
+          <h1 className={styles.title}>ENCONTRE NOSSOS RESTAURANTES</h1>
           <p className={styles.text}>
             1654 R. Don Road #304.
             <br /> NewYork, 85022
@@ -37,13 +37,13 @@ const Footer = () => {
           </p>
         </div>
         <div className={styles.card}>
-          <h1 className={styles.title}>WORKING HOURS</h1>
+          <h1 className={styles.title}>HORÁRIOS</h1>
           <p className={styles.text}>
-            MONDAY UNTIL FRIDAY
+            SEGUNDA - SEXTA
             <br /> 9:00 – 22:00
           </p>
           <p className={styles.text}>
-            SATURDAY - SUNDAY
+            SÁBADO E DOMINGO
             <br /> 12:00 – 24:00
           </p>
         </div>
